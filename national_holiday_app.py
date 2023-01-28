@@ -106,6 +106,3 @@ def data(click, country):
     result = dbc.Table.from_dataframe(df_result, striped=True, bordered=True, hover=True)
     #result = html.Br()
     return result
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
