@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 
 def national_holidays(country, api_key):
+     """ Returns national holidays in a dataframe (with name, description and date) for a given country."""
 
      #1 get data from csv and save in dataframe for data processing at a later stage and save country_list as a list
      df=pd.read_csv('country_list.csv')
